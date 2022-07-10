@@ -193,7 +193,7 @@ export default {
   position: relative;
 }
 .left {
-  width: 80%;
+  width: 90%;
   height:100%;
   display: flex;
   flex-direction: column;
@@ -208,7 +208,7 @@ export default {
   width: 100%;
 }
 .right {
-  width: 20%;
+  width: 10%;
 }
 .years{
   display: flex;
