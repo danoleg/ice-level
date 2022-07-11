@@ -73,22 +73,28 @@ class GetDataByMonth(Resource):
     def post(self):
         post_parser = reqparse.RequestParser()
         post_parser.add_argument('month')
+        post_parser.add_argument('year')
         args = post_parser.parse_args()
         global_name = "IceThickness"
 
         values = []
+        years = []
+        val = 0
 
         with iris_connection() as iris:
             for year in range(1979, 2023):
-                print(year)
-                value = iris.get(global_name, args.year, args.month)
-                values.append({
-                    'year': year,
-                    'value': value
-                })
+                value = iris.get(global_name, str(year), args.month)
+                if str(year) == args.year:
+                    val = value
+                values.append(value)
+                years.append(year)
         data = {
             "status": True,
-            "data": values
+            "data": {
+                "data": values,
+                "years": years
+            },
+            "value": val
         }
         return data
 
@@ -118,7 +124,7 @@ class CheckGlobal(Resource):
         post_parser.add_argument('node')
         args = post_parser.parse_args()
         with iris_connection() as iris:
-           iris_root_nodes_count = iris.count_root_nodes(args.name)
+            iris_root_nodes_count = iris.count_root_nodes(args.name)
         data = {
             "status": True,
             "data": iris_root_nodes_count
