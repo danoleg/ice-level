@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout md-gutter">
-    <div class="md-layout-item upload" v-if="!global_is_exist && global_is_exist!==null">
+    <div class="md-layout-item upload" v-if="!global_is_exist || global_is_exist==null">
       <md-button class="md-raised md-primary" @click="uploadData">START</md-button>
     </div>
     <div class="md-layout-item container" v-if="global_is_exist" >
