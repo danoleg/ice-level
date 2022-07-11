@@ -17,4 +17,4 @@ $ docker-compose up -d
 
 Then open http://127.0.0.1:8080 
 
-![image](https://user-images.githubusercontent.com/31770269/178167005-61e01311-60a8-4967-97bb-7470dac25fe0.png)
+![image](https://user-images.githubusercontent.com/31770269/178167208-cd36e122-1416-4a71-92ce-50012f377504.png)
