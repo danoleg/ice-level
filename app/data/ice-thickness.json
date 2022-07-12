@@ -608,11 +608,11 @@
     "Apr": 22997.2,
     "May": 21975.7,
     "Jun": 17174.6,
-    "Jul": -1000,
-    "Aug": -1000,
-    "Sep": -1000,
-    "Oct": -1000,
-    "Nov": -1000,
-    "Dec": -1000
+    "Jul": null,
+    "Aug": null,
+    "Sep": null,
+    "Oct": null,
+    "Nov": null,
+    "Dec": null
   }
 }
