@@ -2,7 +2,7 @@
   <div id="app">
     <md-app style="min-height: 100vh;">
       <md-app-toolbar class="md-primary">
-        <span class="md-title">Ice thickness</span>
+        <span class="md-title">Ice volume</span>
       </md-app-toolbar>
 
 <!--      <md-app-drawer md-permanent="full">-->

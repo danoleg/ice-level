@@ -14,7 +14,7 @@ export default {
         labels: this.data.years,
         datasets: [
           {
-            label: 'Thickness (m)',
+            label: 'Volume (km^3)',
             backgroundColor: '#DBF1FD',
             data: this.data.data,
             pointHoverRadius: 8,
