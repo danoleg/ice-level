@@ -1,5 +1,5 @@
 ## About application
-This application shows the level of change in world ice over the past years
+This application shows the level of change in arctic sea ice volume over the past years
 
 This application uses nativeAPI to work with IRIS.
 ## How to use it
