@@ -9,10 +9,7 @@ $ git clone https://github.com/danoleg/ice-level
 ```
 And run the commands:
 ```
-$ cd client
-$ npm install
-$ cd ..
-$ docker-compose up -d
+$ docker-compose up -d --build
 ```
 
 Then open http://127.0.0.1:8080 

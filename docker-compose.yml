@@ -32,6 +32,7 @@ services:
       restart: always
       volumes:
         - ./client:/client
+        - /client/node_modules
       depends_on:
         - app
       links:
