@@ -7,7 +7,7 @@ services:
         dockerfile: Dockerfile
       restart: always
       hostname: iris
-      command: --password-file password.txt
+      command: --password-file password.txt --check-caps false
       ports:
         - 51773:51773
         - 52773:52773
